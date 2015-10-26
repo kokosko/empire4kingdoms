@@ -1,0 +1,20 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  username: postgres
+  password: qwerty
+
+development:
+  <<: *default
+  database: empire4kingdoms_development
+
+  test:
+  <<: *default
+  database: empire4kingdoms_test
+#
+production:
+  <<: *default
+  database: empire4kingdoms_production
+  username: empire4kingdoms
+  password: <%= ENV['EMPIRE4KINGDOMS_DATABASE_PASSWORD'] %>
