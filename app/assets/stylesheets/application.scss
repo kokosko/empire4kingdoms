@@ -1,0 +1,34 @@
+ /*
+ *= require_tree .
+ *= require_self
+ */
+
+@import "materialize";
+
+nav {
+  height: 80px;
+}
+
+.current_user {
+  img {
+    padding-top: 10px;
+  }
+}
+
+.left_menu {
+  .collection {
+    border: none;
+    a {
+      border: none;
+    }
+  }
+}
+
+.user_form {
+  width: 300px;
+}
+
+.collection  {
+  .nickname, .username { display: inline-block; }
+  .nickname { width: 200px; }
+}

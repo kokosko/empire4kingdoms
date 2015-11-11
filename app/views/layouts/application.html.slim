@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title Empire4kingdoms
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
+    = stylesheet_link_tag 'https://fonts.googleapis.com/icon?family=Material+Icons'
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+
+  body
+
+  = render 'top_menu'
+  .row
+    .left_menu.col.s2.offset-s1
+      = render 'left_menu'
+    .main_content.col.s8
+      = yield
+    .right_side class='col s1'
+  = render 'footer'
