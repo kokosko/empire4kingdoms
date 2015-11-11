@@ -1,6 +1,9 @@
-h2 = @users.count
-- @users.each do |user|
-  .user
-    p= user.name
-    p= user.email
-    p= user.link
+- if current_user.show_link?
+  h4 User who want share with gifts: #{@users.count}
+  br
+  .collection.row
+    - @users.each do |user|
+      => link_to "http://#{user.link}", target: '_blank', class: 'collection-item ' do
+        .nickname= user.nickname
+        .username= user.name
+

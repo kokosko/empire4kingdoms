@@ -1,0 +1,11 @@
+nav.row
+  .top_menu class='col s10 offset-s1'
+    .nav-wrapper
+      = link_to root_path do
+        = image_tag 'logo.png'
+      - if current_user
+        ul id='nav-mobile' class='current_user right valign-wrapper'
+          li= link_to current_user.name, user_path(current_user.id), class: 'waves-effect waves-teal btn-flat'
+          li= link_to user_path(current_user.id) do
+            = image_tag current_user.image
+          = link_to 'Log Out', logout_path, class: 'waves-effect waves-light btn'

@@ -21,3 +21,37 @@
 
 en:
   hello: "Hello world"
+  users:
+    title: 'Users'
+  form:
+    save: 'Save'
+  equipment:
+    name:
+      commander:
+        hands: "malee soldier's combat strength"
+        arrows: "ranged soldier's combat strength"
+        wall: 'enemy wall protection'
+        gate: 'enemy gate protection'
+        moat: 'enemy moat protection'
+        speed: 'travel speed'
+        costs: 'travel costs'
+        damage: 'building damage'
+        destroy: 'chance of destroying buildings'
+        glory: 'glory points'
+        detect: 'longer to detect army'
+        honor: 'honor'
+        resources: 'resources looted'
+      castellan:
+        hands: "malee soldier's combat strength"
+        arrows: "ranged soldier's combat strength"
+        wall: 'wall protection'
+        gate: 'gate protection'
+        moat: 'moat protection'
+        speed: 'conquer travel speed'
+        damage: 'damage from fire'
+        glory: 'glory points'
+        detect: 'early attack warning'
+        resources: 'lost from looting'
+        occupation: 'period of occupation'
+
+

@@ -1,11 +1,14 @@
 Rails.application.routes.draw do
   root 'welcome#index'
-  get 'auth/facebook/callback', to: 'session#create'
-
+  get 'auth/facebook/callback', to: 'sessions#create'
+  get 'logout', to: 'sessions#destroy'
   resources :users
-
-  # The priority is based upon order of creation: first created -> highest priority.
-  # See how all your routes lay out with "rake routes".
+  resources :equipments, only: :index
+  resources :attacks, only: :index
+  resources :towers, only: :index
+  resources :alliances, only: :index
+  resources :units, only: :index
+  resources :tools, only: :index
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
@@ -15,9 +18,6 @@ Rails.application.routes.draw do
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
-
-  # Example resource route (maps HTTP verbs to controller actions automatically):
-  #   resources :products
 
   # Example resource route with options:
   #   resources :products do

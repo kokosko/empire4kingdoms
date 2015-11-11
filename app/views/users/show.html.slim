@@ -1,0 +1,26 @@
+h4= t('user.profile')
+br
+
+- if current_user
+  .row
+    .user_form.col.m6
+      = simple_form_for @user, remote: true do |f|
+        = f.label 'My nickname in game'
+        = f.input :nickname, label: false
+        br
+        = f.label 'Your server'
+        = f.association :server, collection: Server.all.order(:name), label: false
+        br
+        = f.label 'X coordinate at Great Empire'
+        = f.input :x, label: false
+        = f.label 'Y coordinate at Great Empire'
+        = f.input :y, label: false
+        = f.input :show_link, label: 'Other users can see link to my Facebook account'
+        br
+        = f.submit t('form.save'), class: 'waves-effect waves-light btn'
+    .col.m6
+      = image_tag current_user.image
+      p= current_user.name
+      p= current_user.link
+      p= current_user.email
+
