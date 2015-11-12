@@ -1,4 +1,3 @@
-EquipParams.destroy_all
 Server.destroy_all
 
 ['AR 1', 'ARAB 1', 'ASIA 1', 'AU 1', 'BR 1', 'CN 1', 'DE 1', 'DE 2', 'ES 1',
