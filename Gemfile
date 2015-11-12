@@ -16,6 +16,7 @@ gem 'slim-rails'
 gem 'omniauth-facebook'
 gem 'koala', '~> 1.10.0rc'
 gem 'simple_form'
+gem 'airbrake'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
