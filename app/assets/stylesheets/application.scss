@@ -5,9 +5,8 @@
 
 @import "materialize";
 
-nav {
-  height: 80px;
-}
+nav { height: 80px; }
+td { padding: 0; }
 
 .current_user {
   img {
@@ -32,3 +31,21 @@ nav {
   .nickname, .username { display: inline-block; }
   .nickname { width: 200px; }
 }
+
+.picture img {
+  border: 1px solid #C5C5C5;
+}
+
+.b-image {
+  width: 200px;
+}
+
+.building-list {
+  width: 180px;
+  height: 160px;
+}
+
+.unknown { background-color: #FFC8C8; }
+td.bottom_border { border-bottom: 1px solid #C7C7C7; }
+.blank { height: 10px; }
+p.no-margin { margin: 0; }

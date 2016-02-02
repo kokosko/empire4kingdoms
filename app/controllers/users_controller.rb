@@ -2,7 +2,9 @@ class UsersController < ApplicationController
   before_action :set_user, only: [:show, :update, :destroy]
 
   def index
-    @users = User.all.visibility(true).server(current_user.server.id)
+    if current_user.server.id
+      @users = User.all.visibility(true).server(current_user.server.id)
+    end
   end
 
   def show

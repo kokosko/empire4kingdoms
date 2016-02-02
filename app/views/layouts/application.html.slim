@@ -11,9 +11,10 @@ html
 
   = render 'top_menu'
   .row
-    .left_menu.col.s2.offset-s1
+    .left_menu.col.s2
       = render 'left_menu'
     .main_content.col.s8
       = yield
-    .right_side class='col s1'
+    .right_side.col.s2
+      = render 'right_block'
   = render 'footer'

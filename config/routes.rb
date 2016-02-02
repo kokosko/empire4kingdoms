@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   root 'welcome#index'
   get 'auth/facebook/callback', to: 'sessions#create'
   get 'logout', to: 'sessions#destroy'
+  resources :buildings, only: :index
   resources :users
   resources :equipments, only: :index
   resources :attacks, only: :index
