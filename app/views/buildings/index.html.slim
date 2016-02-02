@@ -1,0 +1,60 @@
+- if params[:name]
+  h4
+    = link_to t('building.title'), buildings_path
+    = ' / '
+    = t("buildings.#{params[:name]}.name")
+  table
+    - t("buildings.#{params[:name]}.levels").each do |l|
+      tr
+        td.b-image rowspan=(6)
+          = image_tag "buildings/#{l[1][:image]}", class: 'building-list'
+        td.bottom_border= t('building.start_level') + ': '
+        td.bottom_border class=unknown(l[1][:start_level]) = l[1][:legendary] == '1' ? t('building.from_leg_level', level: l[1][:start_level]) : t('building.from_level', level: l[1][:start_level] )
+      tr
+        td.bottom_border= t("buildings.#{params[:name]}")[:parametr] + ': '
+        td.bottom_border class=unknown(l[1][:value]) = l[1][:value]
+      tr
+        td.bottom_border= t('building.expirience') + ': '
+        td.bottom_border class=unknown(l[1][:expirience]) = l[1][:expirience]
+      tr
+        td.bottom_border= t('building.order') + ': '
+        td.bottom_border class=unknown(l[1][:order]) = l[1][:order]
+      tr
+        td.bottom_border= t('building.architect.title') + ': '
+        td.bottom_border class=unknown(l[1][:architect])
+          - if l[1][:architect] == '???'
+            = '???'
+          - else
+            = l[1][:architect] == '1' ? t('building.architect.need') : t('building.architect.no_need')
+      tr
+        td= t('cost') + ': '
+        td class=unknown(l[1][:cost].include? '???')
+          - if l[1][:cost].split(',')[0] != '0'
+            p.no-margin= t('wood') + ': ' + l[1][:cost].split(',')[0]
+          - if l[1][:cost].split(',')[1] != '0'
+            p.no-margin= t('stone') + ': ' + l[1][:cost].split(',')[1]
+          - if l[1][:cost].split(',')[2] != '0'
+            p.no-margin= t('iron') + ': ' + l[1][:cost].split(',')[2]
+          - if l[1][:cost].split(',')[3] != '0'
+            p.no-margin= t('charcoal') + ': ' + l[1][:cost].split(',')[3]
+          - if l[1][:cost].split(',')[4] != '0'
+            p.no-margin= t('olive') + ': ' + l[1][:cost].split(',')[4]
+          - if l[1][:cost].split(',')[5] != '0'
+            p.no-margin= t('glass') + ': ' + l[1][:cost].split(',')[5]
+          - if l[1][:cost].split(',')[6] != '0'
+            p.no-margin= t('rubies') + ': ' + l[1][:cost].split(',')[6]
+      tr
+        td.blank colspan=(3)
+
+
+- else
+  table.bordered
+
+    - I18n.t('buildings').each do |b|
+      .col.s6.m4
+        .card
+          .card-image
+            = image_tag "buildings/#{b[0]}.jpg"
+          .card-content
+            p.card-title = link_to b[1][:name], buildings_path(name: b[0])
+            p= b[1][:description]

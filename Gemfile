@@ -13,10 +13,12 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'materialize-sass'
 gem 'slim-rails'
+gem 'cloudinary'
+gem 'carrierwave'
 # gem 'omniauth-facebook'
 gem 'koala', '~> 1.10.0rc'
 gem 'simple_form'
-gem 'airbrake'
+# gem 'airbrake'
 gem 'omniauth-facebook', git: 'https://github.com/gioblu/omniauth-facebook'
 
 # Use ActiveModel has_secure_password

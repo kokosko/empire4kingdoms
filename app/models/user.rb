@@ -1,5 +1,4 @@
 class User < ActiveRecord::Base
-
   belongs_to :server
 
   def self.create_with_omniauth(auth)

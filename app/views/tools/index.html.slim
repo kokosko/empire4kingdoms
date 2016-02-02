@@ -1,6 +1,29 @@
-h2 Tools
+h2= t('tool.title')
 
-h4 Comming soon...
+/* - binding.pry */
 
-h4 At this page you'll see all tools and their characteristics
+- I18n.t('tools').each do |tool|
+  .col.s6.m4
+    .card
+      .card-image.waves-effect.waves-block.waves-light
+        = image_tag "tools/#{tool[0]}.jpg", class: 'activator'
+      .card-content
+        span.card-title.activator.grey-text.text-darken-4
+          = tool[1][:name]
+      .card-reveal
+        span.card-title.grey-text.text-darken-4
+          = tool[1][:name]
+          i.material-icons.right close
+        p= tool[1][:defof] == '1' ? t('tool.of') : t('tool.def')
+        p= tool[1][:description]
+        p= "#{tool[1][:parameter]}: #{tool[1][:value]}"
+        p= "#{t('tool.speed')}: #{tool[1][:speed]}"
+        - if tool[1][:cost].split(',')[0] != '0'
+          p.no-margin= t('wood') + ': ' + tool[1][:cost].split(',')[0]
+        - if tool[1][:cost].split(',')[0] != '0'
+          p.no-margin= t('wood') + ': ' + tool[1][:cost].split(',')[0]
+        - if tool[1][:cost].split(',')[0] != '0'
+          p.no-margin= t('wood') + ': ' + tool[1][:cost].split(',')[0]
+        - if tool[1][:cost].split(',')[0] != '0'
+          p.no-margin= t('wood') + ': ' + tool[1][:cost].split(',')[0]
 

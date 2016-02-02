@@ -1,6 +1,15 @@
 h2 Units
 
-h4 Comming soon...
-
-h4 At this page you'll see all units and their characteristics.
-
+table.bordered
+  thead
+    tr
+      th Image
+      th Name
+      th Power
+      th Def melee
+      th Def ranged
+      th Capasity
+      th Speed
+      th Food
+  tbody
+    = render @units
