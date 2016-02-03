@@ -1,15 +1,23 @@
-h2 Units
+h2= t('unit.title')
 
-table.bordered
-  thead
-    tr
-      th Image
-      th Name
-      th Power
-      th Def melee
-      th Def ranged
-      th Capasity
-      th Speed
-      th Food
-  tbody
-    = render @units
+/* - binding.pry */
+
+- I18n.t('units').each do |unit|
+  .col.s6.m4
+    .card
+      .card-image.waves-effect.waves-block.waves-light
+        = image_tag "units/#{unit[0]}.jpg", class: 'activator'
+      .card-content
+        span.card-title.activator.grey-text.text-darken-4
+          = unit[1][:name]
+      .card-reveal
+        span.card-title.grey-text.text-darken-4
+          = unit[1][:name]
+          i.material-icons.right close
+        p= "#{unit[1][:kind] == 1 ? t('unit.strength_melee') : t('unit.strength_ranged')}: #{unit[1][:strength]}"
+        p= "#{t('unit.def_melee')}: #{unit[1][:def_melee]}"
+        p= "#{t('unit.def_ranged')}: #{unit[1][:def_ranged]}"
+        p= "#{t('unit.capasity')}: #{unit[1][:capasity]}"
+        p= "#{t('unit.speed')}: #{unit[1][:speed]}"
+        p= "#{t('unit.food')}: #{unit[1][:food]}"
+
