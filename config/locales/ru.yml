@@ -41,6 +41,643 @@ ru:
   glass: 'Стекло'
   rubies: 'Рубины'
 
+  unit:
+    title: 'Юниты'
+    melee: 'Ближний бой'
+    ranged: 'Стрельба'
+    strength_melee: 'Сила атаки (ближний бой)'
+    strength_ranged: 'Сила атаки (стрельба)'
+    def_melee: 'Сила обороны против солдат ближнего боя'
+    def_ranged: 'Сила в обороне против стрелков'
+    capasity: 'Вместительность для грабежа'
+    speed: 'Скорость передвижения'
+    food: 'Потребление еды'
+
+  units:
+    spearman:
+      name: 'Копейщик'
+      kind: 0
+      strength: 26
+      def_melee: 26
+      def_ranged: 8
+      capasity: 14
+      speed: 75
+      food: 2
+    maceman:
+      name: 'Солдат с булавой'
+      kind: 0
+      strength: 38
+      def_melee: 38
+      def_ranged: 6
+      capasity: 32
+      speed: 73
+      food: 2
+    swordsman:
+      name: 'Мечник'
+      kind: 0
+      strength: 61
+      def_melee: 5
+      def_ranged: 3
+      capasity: 12
+      speed: 24
+      food: 3
+    halberdier:
+      name: 'Алебардщик'
+      kind: 0
+      strength: 17
+      def_melee: 135
+      def_ranged: 45
+      capasity: 18
+      speed: 19
+      food: 4
+    two-handed:
+      name: 'Двуручный меч'
+      kind: 0
+      strength: 109
+      def_melee: 19
+      def_ranged: 5
+      capasity: 28
+      speed: 18
+      food: 4
+    bowman:
+      name: 'Лучник'
+      kind: 1
+      strength: 24
+      def_melee: 8
+      def_ranged: 24
+      capasity: 13
+      speed: 75
+      food: 2
+    crossbowman:
+      name: 'Арбалетчик'
+      kind: 1
+      strength: 36
+      def_melee: 6
+      def_ranged: 36
+      capasity: 22
+      speed: 73
+      food: 2
+    archer:
+      name: 'Солдат с луком'
+      kind: 1
+      strength: 10
+      def_melee: 53
+      def_ranged: 55
+      capasity: 9
+      speed: 25
+      food: 3
+    longbowman:
+      name: 'Английский лучник'
+      kind: 1
+      strength: 20
+      def_melee: 51
+      def_ranged: 125
+      capasity: 21
+      speed: 21
+      food: 4
+    heavy-crossbowman:
+      name: 'Тяжелый арбалетчик'
+      kind: 1
+      strength: 92
+      def_melee: 15
+      def_ranged: 24
+      capasity: 32
+      speed: 20
+      food: 4
+    vet-crossbowman:
+      name: 'Ветеран-арбалетчик'
+      kind: 1
+      strength: 98
+      def_melee: 16
+      def_ranged: 26
+      capasity: 22
+      speed: 23
+      food: 4
+    vet-maceman:
+      name: 'Ветеран-солдат с булавой'
+      kind: 0
+      strength: 118
+      def_melee: 20
+      def_ranged: 6
+      capasity: 32
+      speed: 22
+      food: 4
+    vet-bowman:
+      name: 'Ветеран-лучник'
+      kind: 1
+      strength: 18
+      def_melee: 59
+      def_ranged: 132
+      capasity: 13
+      speed: 27
+      food: 4
+    vet-spearman:
+      name: 'Ветеран-копейщик'
+      kind: 0
+      strength: 15
+      def_melee: 142
+      def_ranged: 52
+      capasity: 14
+      speed: 26
+      food: 4
+    vet-swordsman:
+      name: 'Ветеран-мечник'
+      kind: 0
+      strength: 111
+      def_melee: 138
+      def_ranged: 72
+      capasity: 29
+      speed: 28
+      food: 6
+    vet-two-handed:
+      name: 'Дворучный меч-ветеран'
+      kind: 0
+      strength: 125
+      def_melee: 20
+      def_ranged: 6
+      capasity: 32
+      speed: 28
+      food: 4
+    vet-heavy-crossbowman:
+      name: 'Тяжелый арбалетчик-ветеран'
+      kind: 1
+      strength: 114
+      def_melee: 16
+      def_ranged: 26
+      capasity: 25
+      speed: 28
+      food: 4
+    vet-longbowman:
+      name: 'Английский лучник-ветеран'
+      kind: 1
+      strength: 17
+      def_melee: 61
+      def_ranged: 134
+      capasity: 14
+      speed: 32
+      food: 4
+    vet-halberdier:
+      name: 'Алебардщик-ветеран'
+      kind: 0
+      strength: 15
+      def_melee: 145
+      def_ranged: 55
+      capasity: 15
+      speed: 32
+      food: 4
+    traw-crossbowman:
+      name: 'Странствующий арбалетчик'
+      kind: 1
+      strength: 135
+      def_melee: 22
+      def_ranged: 30
+      capasity: 35
+      speed: 28
+      food: 4
+    traw-knight:
+      name: 'Странствующий рыцарь'
+      kind: 0
+      strength: 146
+      def_melee: 20
+      def_ranged: 9
+      capasity: 34
+      speed: 28
+      food: 4
+    royal-knight:
+      name: 'Королевский рыцарь'
+      kind: 0
+      strength: 132
+      def_melee: 18
+      def_ranged: 5
+      capasity: 33
+      speed: 28
+      food: 4
+    royal-crossbowman:
+      name: 'Королевский арбалетик'
+      kind: 1
+      strength: 121
+      def_melee: 14
+      def_ranged: 23
+      capasity: 29
+      speed: 28
+      food: 4
+    royal-sentinel:
+      name: 'Королевский страж'
+      kind: 0
+      strength: 14
+      def_melee: 150
+      def_ranged: 59
+      capasity: 16
+      speed: 32
+      food: 4
+    royal-scout:
+      name: 'Королевский разведчик'
+      kind: 1
+      strength: 16
+      def_melee: 64
+      def_ranged: 139
+      capasity: 15
+      speed: 32
+      food: 4
+    nord-warrior:
+      name: 'Ренегат (вони-викинг)'
+      kind: 0
+      strength: 103
+      def_melee: 129
+      def_ranged: 41
+      capasity: 28
+      speed: 73
+      food: 4
+    nord-bowman:
+      name: 'Ренегат (лучник-викинг)'
+      kind: 1
+      strength: 86
+      def_melee: 48
+      def_ranged: 116
+      capasity: 28
+      speed: 73
+      food: 4
+    wolf:
+      name: 'Волк'
+      kind: 0
+      strength: 50
+      def_melee: 50
+      def_ranged: 0
+      capasity: 0
+      speed: 80
+      food: 3
+    barbarian:
+      name: 'Варвар'
+      kind: 0
+      strength: 113
+      def_melee: 9
+      def_ranged: 4
+      capasity: 50
+      speed: 25
+      food: 4
+    saber-warrior:
+      name: 'Ренегат (воин с саблей)'
+      kind: 0
+      strength: 111
+      def_melee: 137
+      def_ranged: 48
+      capasity: 28
+      speed: 25
+      food: 4
+    desert-bowman:
+      name: 'Ренегат (пустынный лучник)'
+      kind: 1
+      strength: 94
+      def_melee: 54
+      def_ranged: 126
+      capasity: 28
+      speed: 25
+      food: 4
+    flame-bearer:
+      name: 'Несущий пламя'
+      kind: 0
+      strength: 14
+      def_melee: 170
+      def_ranged: 49
+      capasity: 3
+      speed: 25
+      food: 4
+    composite-bowman:
+      name: 'Лучник - композитный лук'
+      kind: 1
+      strength: 16
+      def_melee: 54
+      def_ranged: 159
+      capasity: 2
+      speed: 25
+      food: 4
+    demon-horror:
+      name: 'Демонический ужас'
+      kind: 0
+      strength: 185
+      def_melee: 119
+      def_ranged: 5
+      capasity: 35
+      speed: 28
+      food: 5
+    deathly-horror:
+      name: 'Смертельный ужас'
+      kind: 1
+      strength: 162
+      def_melee: 15
+      def_ranged: 24
+      capasity: 40
+      speed: 28
+      food: 5
+    cultist-warrior:
+      name: 'Ренегат (воин-культист)'
+      kind: 0
+      strength: 124
+      def_melee: 144
+      def_ranged: 55
+      capasity: 28
+      speed: 25
+      food: 4
+    cultist-bowman:
+      name: 'Регенат (лучник-культист)'
+      kind: 1
+      strength: 112
+      def_melee: 59
+      def_ranged: 135
+      capasity: 28
+      speed: 25
+      food: 4
+    skeleton-warrior:
+      name: 'Элитный скелет-воин'
+      kind: 0
+      strength: 185
+      def_melee: 19
+      def_ranged: 5
+      capasity: 35
+      speed: 28
+      food: 5
+    skeleton-bowman:
+      name: 'Элитный скелет-лучник'
+      kind: 1
+      strength: 162
+      def_melee: 15
+      def_ranged: 24
+      capasity: 40
+      speed: 28
+      food: 5
+    slingshot:
+      name: 'Пращник'
+      kind: 1
+      strength: 130
+      def_melee: 5
+      def_ranged: 9
+      capasity: 29
+      speed: 28
+      food: 4
+    vet-slingshot:
+      name: 'Ветеран-пращник'
+      kind: 1
+      strength: 139
+      def_melee: 19
+      def_ranged: 24
+      capasity: 32
+      speed: 28
+      food: 4
+    spear-thrower:
+      name: 'Ренегат-копьеметальщик'
+      kind: 1
+      strength: 14
+      def_melee: 20
+      def_ranged: 139
+      capasity: 15
+      speed: 32
+      food: 4
+    saber:
+      name: 'Сабельщик'
+      kind: 0
+      strength: 139
+      def_melee: 6
+      def_ranged: 3
+      capasity: 33
+      speed: 28
+      food: 4
+    vet-saber:
+      name: 'Ветеран-сабельщик'
+      kind: 0
+      strength: 149
+      def_melee: 20
+      def_ranged: 15
+      capasity: 35
+      speed: 28
+      food: 4
+    khan-quards:
+      name: 'Ханская стража'
+      kind: 0
+      strength: 175
+      def_melee: 54
+      def_ranged: 50
+      capasity: 32
+      speed: 28
+      food: 5
+    elite-knight:
+      name: 'Элитный рыцарь'
+      kind: 0
+      strength: 140
+      def_melee: 18
+      def_ranged: 5
+      capasity: 33
+      speed: 28
+      food: 4
+    elite-crossbowman:
+      name: 'Элитный арбалечик'
+      kind: 1
+      strength: 129
+      def_melee: 14
+      def_ranged: 23
+      capasity: 29
+      speed: 28
+      food: 4
+    swashbuckler:
+      name: 'Рубака-ренегат'
+      kind: 0
+      strength: 166
+      def_melee: 11
+      def_ranged: 3
+      capasity: 90
+      speed: 28
+      food: 6
+    sail-ripper:
+      name: 'Потрошитель парусов-ренегат'
+      kind: 1
+      strength: 144
+      def_melee: 8
+      def_ranged: 14
+      capasity: 90
+      speed: 28
+      food: 6
+    shark-warrior:
+      name: 'Матяжный воин акульего зуба'
+      kind: 0
+      strength: 146
+      def_melee: 20
+      def_ranged: 9
+      capasity: 0
+      speed: 50
+      food: 4
+    stone-smasher:
+      name: 'Мятежный камнебой'
+      kind: 1
+      strength: 135
+      def_melee: 22
+      def_ranged: 30
+      capasity: 0
+      speed: 50
+      food: 4
+    pyromaniac:
+      name: 'Пироман'
+      kind: 0
+      strength: 111
+      def_melee: 19
+      def_ranged: 4
+      capasity: 25
+      speed: 30
+      food: 4
+    vet-pyromaniac:
+      name: 'Ветеран-пироман'
+      kind: 0
+      strength: 160
+      def_melee: 19
+      def_ranged: 4
+      capasity: 31
+      speed: 32
+      food: 5
+    marauder:
+      name: 'Мародер'
+      kind: 0
+      strength: 113
+      def_melee: 18
+      def_ranged: 4
+      capasity: 70
+      speed: 30
+      food: 4
+    vet-marauder:
+      name: 'Ветеран-мародер'
+      kind: 0
+      strength: 165
+      def_melee: 18
+      def_ranged: 4
+      capasity: 105
+      speed: 32
+      food: 5
+    tentacles:
+      name: 'Щупальце'
+      kind: 0
+      strength: 109
+      def_melee: 135
+      def_ranged: 45
+      capasity: 20
+      speed: 0
+      food: 0
+    kraken:
+      name: 'Голова кракена'
+      kind: 1
+      strength: 92
+      def_melee: 51
+      def_ranged: 125
+      capasity: 20
+      speed: 0
+      food: 0
+    arrow-thrower:
+      name: 'Ренегат-стреломет'
+      kind: 1
+      strength: 148
+      def_melee: 18
+      def_ranged: 27
+      capasity: 25
+      speed: 50
+      food: 4
+    sai:
+      name: 'Ренегат (воин с сай)'
+      kind: 0
+      strength: 160
+      def_melee: 20
+      def_ranged: 7
+      capasity: 29
+      speed: 50
+      food: 4
+    bow-master:
+      name: 'Ренегат (мастер лука)'
+      kind: 1
+      strength: 16
+      def_melee: 39
+      def_ranged: 153
+      capasity: 15
+      speed: 322
+      food: 4
+    katana:
+      name: 'Ренегат (воин с катаной)'
+      kind: 0
+      strength: 14
+      def_melee: 165
+      def_ranged: 37
+      capasity: 16
+      speed: 32
+      food: 4
+    dragon-claws:
+      name: 'Когти дракона'
+      kind: 0
+      strength: 1
+      def_melee: 250
+      def_ranged: 180
+      capasity: 1
+      speed: 0
+      food: 0
+    dragon-fire:
+      name: 'Пламя дракона'
+      kind: 1
+      strength: 1
+      def_melee: 400
+      def_ranged: 470
+      capasity: 1
+      speed: 0
+      food: 0
+    elite-bone-hunter:
+      name: 'Элитная костяная охотница'
+      kind: 0
+      strength: 185
+      def_melee: 19
+      def_ranged: 5
+      capasity: 35
+      speed: 28
+      food: 5
+    elite-frosty-archer:
+      name: 'Элитный морозный лучник'
+      kind: 1
+      strength: 162
+      def_melee: 15
+      def_ranged: 24
+      capasity: 40
+      speed: 28
+      food: 5
+    shadow-crossbowman:
+      name: 'Тайный преступник'
+      kind: 1
+      strength: 92
+      def_melee: 15
+      def_ranged: 24
+      capasity: 32
+      speed: 20
+      food: 0
+    shadow-two-handed:
+      name: 'Тайный бродяга'
+      kind: 0
+      strength: 109
+      def_melee: 19
+      def_ranged: 5
+      capasity: 28
+      speed: 18
+      food: 0
+    shadew-vet-maceman:
+      name: 'Тайный мерзавец'
+      kind: 0
+      strength: 118
+      def_melee: 20
+      def_ranged: 6
+      capasity: 32
+      speed: 22
+      food: 0
+    shadow-vet-crossbowman:
+      name: 'Тайный негодяй'
+      kind: 1
+      strength: 98
+      def_melee: 16
+      def_ranged: 26
+      capasity: 22
+      speed: 23
+      food: 0
+
+
+
   tool:
     title: 'Орудия'
     speed: 'Скорость передвижения'
